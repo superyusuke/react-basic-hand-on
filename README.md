@@ -9,11 +9,16 @@ React が今、シングル・ページ・アプリケーションの市場で�
 また、前提知識として要求され、あまり解説されない ES2015 のシンタックスについても重点的に解説をします。
 
 例えば Arrow Functin
+
 ```javascript
 const AddTwo = target => target + 2 
 ```
 
-他にも {...arg} といった引数の渡し方、({arg1, arg2 }) といった受け取り方
+他にも 
+1. {...arg} という引数の渡し方
+2. ({arg1, arg2 }) という受け取り方
+3. `${variable1} ${variable2}` という文字列結合
+
 ```javascript
 import React from 'react'
 import { render } from 'react-dom'
@@ -29,4 +34,11 @@ const name = {
 }
 
 render(<FullName {...name} />, document.getElementById('root'))
+```
+
+Array.map などの比較的新しいメソッド
+
+```
+const nameArray = ['Taka', 'Hiroshi', 'Youji']
+const mrName = () => nameArray.map(name => `Mr.${name}`)
 ```
