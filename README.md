@@ -38,7 +38,7 @@ render(<FullName {...name} />, document.getElementById('root'))
 
 Array.map などの比較的新しいメソッド
 
-```
+```javascript
 const nameArray = ['Taka', 'Hiroshi', 'Youji']
 const mrName = () => nameArray.map(name => `Mr.${name}`)
 ```
